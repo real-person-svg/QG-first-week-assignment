@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>TODO List</title>
+</head>
+
+<body>
+  <div class="todo-container">
+    <header class="todo-header">
+      <h1>TODO</h1>
+    </header>
+    <form class="todo-form">
+      <input type="text" placeholder="新增待办事项..." class="todo-input">
+      <button type="submit" class="todo-submit softchange">提交</button>
+    </form>
+    <div class="todo-operations">
+      <div class="operations-button">
+        <button class="complete-all">全部标为完成</button>
+        <button class="clear-completed">全部清除</button>
+        <button class="export">全部导出</button>
+      </div>
+      <p class="motto">今日事今日毕，勿将今事待明日!</p>
+    </div>
+    <div class="todo-main">
+      <p class="intro">待办事项表📝</p>
+      <div class="todo-list"></div>
+    </div>
+    <div class="recycle-main">
+      <p class="intro">回收站🗑️</p>
+      <div class="recycle-bin"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
