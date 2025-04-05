@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>模型库</title>
+</head>
+
+<body>
+  <section class="main-bench">
+    <div class="model-library">
+      <div class="header">
+        <span class="title">模型库</span>
+        <span class="delete-icon">🗑️</span>
+      </div>
+      <div class="action-buttons">
+        <button class="add-level">增加层级</button>
+        <button class="upload">+ 上传</button>
+      </div>
+      <div class="content">
+        <div class="content-item" draggable="true">
+          openai
+        </div>
+        <div class="content-item" draggable="true">
+          deepseek
+        </div>
+        <div class="content-item" draggable="true">
+          腾讯元宝
+        </div>
+      </div>
+    </div>
+    <div class="workbench"></div>
+  </section>
+
+  <section class="modal-section">
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <span class="close">&times;</span>
+        <h2>运行项目</h2>
+      </div>
+      <div class="modal-header-right">
+        <button class="cancel-btn">取消</button>
+        <button class="run-btn">运行</button>
+      </div>
+    </div>
+    <div class="server-choice">
+      <button class="choice-btn active">智能选择</button>
+      <button class="choice-btn">服务器1</button>
+      <button class="choice-btn">服务器2</button>
+    </div>
+    <div class="form-item">
+      <label for="project-name">项目名称</label>
+      <input type="text" id="project-name" placeholder="">
+    </div>
+    <div class="form-item">
+      <label for="input-text">请输入文本</label>
+      <textarea id="input-text" placeholder="" class="input-text"></textarea>
+    </div>
+    <div class="form-item">
+      <label for="upload-image">上传图片</label>
+      <div class="upload-box">
+        <label for="upload-image">
+          <input type="file" id="upload-image" style="display: none;">
+          <span class="upload-icon">+</span>
+          <span class="upload-text">Upload</span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <section class="mask"></section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
